@@ -1,0 +1,87 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  width: 800px;
+  font-family: 'Raleway', ;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.letter {
+  padding: 20px;
+  background-color: #8aea92;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  font-size: 24px;
+}
+
+.box {
+  height: 30px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.submit {
+  height: 30 px;
+  margin-top: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  text-align: center;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #80ada0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16;
+    a{
+    text-decoration: none;
+    color: white;
+    }
+}
+
+
+input[type=submit] {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-align: center;
+  width: 100px;
+  margin: 0px auto;
+  background-color: #80ada0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
