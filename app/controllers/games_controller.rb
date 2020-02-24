@@ -57,7 +57,7 @@ class GamesController < ApplicationController
   end
 
   def english?(word)
-    url = "https://wagon-dictionary.herokuapp.com/#{word}"
+    url = "https://wagon-dictionary.herokuapp.com/#{word.gsub(" ","")}"
     dico = open(url).read
     api_word = JSON.parse(dico)
     api_word['found']

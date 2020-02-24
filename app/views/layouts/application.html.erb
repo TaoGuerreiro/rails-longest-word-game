@@ -5,11 +5,16 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- Assets pipeline -> app/assets/javascripts & app/assets/stylesheets -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Webpack, JS only -> app/javascript -->
+    <%# stylesheet_pack_tag 'application' %>
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>

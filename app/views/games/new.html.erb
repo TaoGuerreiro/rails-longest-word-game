@@ -1,17 +1,18 @@
 
 <div class="container">
   <h1>Choose your longuest word!</h1>
-  <div class="grid">
+  <div class="grid" id="drag">
     <% @letters.each do |letter|  %>
     <p class="letter"> <%= letter %> </p>
     <% end %>
   </div>
   <div class="form">
-    <form action="/score" method="post">
+    <form class="monform" action="/score" method="post">
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <%= hidden_field_tag :letters, @letters %>
-      <input class="box" type="text" name="word" placeholder="Your word!">
+      <div class="answere-grid" id="drop"  ><input id="box" type="hidden" name="word"></div>
       <div class="button"> <input class="submit" type="submit"></div>
     </form>
   </div>
 </div>
+
